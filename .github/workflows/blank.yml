@@ -30,6 +30,10 @@ jobs:
       - name: Configuaracion Node
         uses: actions/setup-node@v4.0.3
 
+      # Instalar dependencias Angular
+      - name: Install deps
+        run: npm install
+
       # Build App
       - name: Build app
         run: npm run build:prod
